@@ -13,9 +13,13 @@ Reliable AI Lab is an open-source Python toolkit for **LLM evaluation, RAG testi
 
 Reliable AI Lab contains thirteen independently runnable projects for testing what happens when AI systems fail: citations become inconsistent, retrieval budgets get tight, agent plans contain unsupported actions, infrastructure loses capacity, telemetry drifts, or deployed data changes.
 
-**No API key or GPU is required for the default demos.**\n\n**Want to try something before installing?** Open the [browser-based AI Failure Lab](https://raw.githack.com/karthikvraj/reliable-ai-lab/main/docs/index.html) and deliberately break a citation, an agent plan, or an inference-capacity assumption.
+**No API key or GPU is required for the default demos.**
+
+**Want to try something before installing?** Open the [browser-based AI Failure Lab](https://raw.githack.com/karthikvraj/reliable-ai-lab/main/docs/index.html) and deliberately break a citation, an agent plan, or an inference-capacity assumption.
 
 [Download v0.2.1](../../releases/tag/reliable-ai-lab-v0.2.1) · [Run the Reliability Tour](#run-the-reliability-tour) · [Try the demos](#try-it-in-60-seconds) · [Architecture](docs/ARCHITECTURE.md) · [Validation](docs/VALIDATION.md)
+
+**Make it yours:** [Fork, change one input, and inspect the result](docs/FORK_AND_RUN.md). Start with a two-claim example and expected outputs.
 
 ## Pick a failure
 

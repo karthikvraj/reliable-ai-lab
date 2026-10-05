@@ -1,0 +1,10 @@
+{
+  "_provenance": "Synthetic onboarding example, not a production incident.",
+  "sources": [
+    {"id": "cache", "text": "The cache time to live is 60 seconds."}
+  ],
+  "claims": [
+    {"text": "The cache time to live is 600 seconds.", "source_ids": ["cache"]},
+    {"text": "The cache time to live is 1 minute.", "source_ids": ["cache"]}
+  ]
+}
