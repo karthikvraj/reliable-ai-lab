@@ -23,3 +23,33 @@ Start with Evidence Gate for grounding reliability, Repair Agent for agent relia
 Lead with one example and a short screen recording. Link to the project code and include the limitation that matters for that example. Follow each community's posting rules.
 
 Track actual referrals, release downloads, reproducible issues and contributions. Record the date range for any number you share. Use updates to describe work that has actually changed.
+
+## Small tester invitation (draft)
+
+**Can your grounding check distinguish 60 seconds from 600?**
+
+I maintain Reliable AI Lab, an open-source Python project for exploring AI failure
+modes. I'm looking for five developers to try one small example and tell me where
+it falls short.
+
+The example compares a source saying "60 seconds" with claims saying "600 seconds"
+and "1 minute". Run it, change one input, and inspect the result. It runs locally
+without an API key or GPU.
+
+It uses lexical and numeric checks, so it can miss semantic errors and misclassify
+paraphrases. A small counterexample or installation problem is more useful to me
+than a star.
+
+Try it: https://github.com/karthikvraj/reliable-ai-lab/blob/main/docs/FORK_AND_RUN.md
+
+Feedback: https://github.com/karthikvraj/reliable-ai-lab/issues/new/choose
+
+Fork it if you'd like to adapt the example; you don't need to fork to give feedback.
+
+### Distribution notes
+
+This text is prepared for review and has not been posted. Use a relevant developer
+community that permits project feedback requests, or share with people who have
+asked for this kind of example. Adapt the wording to that audience. Log the posting
+date and URL in [the test record](traction/README.md). Do not send bulk unsolicited
+messages or represent a draft as a published post.
