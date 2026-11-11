@@ -53,6 +53,12 @@ def run(payload: dict) -> dict:
             raise ValueError("expected_source_ids must be a nonempty list of known ids")
         expected = set(expected)
         result["metrics"]["source_recall"] = len(expected & {c["id"] for c in output}) / len(expected)
+        # Chunk-level companion to source_recall: of the chunks actually
+        # selected, how many came from an expected source? 0.0 when the
+        # selection is empty.
+        result["metrics"]["source_precision"] = (
+            sum(1 for c in output if c["id"] in expected) / len(output) if output else 0.0
+        )
     return result
 
 

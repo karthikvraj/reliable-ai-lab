@@ -53,6 +53,9 @@ Seed 7, using synthetic or hand-authored data. These results illustrate the code
 | fixed_top3_words | 22 |
 | fixed_top3_over_budget | False |
 | source_recall | 1 |
+| source_precision | 1 |
+
+When `expected_source_ids` is given, two labeled-set metrics are reported. `source_recall` is the share of expected sources covered by at least one selected chunk. `source_precision` is the share of selected chunks that come from an expected source (0 when nothing is selected), so it shows how much of the budget went to sources outside the labeled set. It counts chunks, not distinct sources, and it does not measure whether a chunk is the relevant passage within its source document or whether the selection would improve an answer.
 
 ## Code and tests
 

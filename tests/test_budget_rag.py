@@ -21,3 +21,12 @@ def test_budget_can_differ_from_top_k():
     p=m.sample();p['word_budget']=15;r=m.run(p)
     assert r['metrics']['fixed_top3_over_budget']
     assert r['metrics']['selected_words']<=15
+
+def test_source_precision_all_selected_chunks_expected():
+    r=m.run(m.sample())
+    assert r['metrics']['source_precision']==1
+
+def test_source_precision_counts_unexpected_chunks():
+    p=m.sample();p['expected_source_ids']=['gpu'];r=m.run(p)
+    # The selector also picks a network chunk: only 2 of 3 chunks are from gpu.
+    assert r['metrics']['source_precision']==pytest.approx(2/3)
